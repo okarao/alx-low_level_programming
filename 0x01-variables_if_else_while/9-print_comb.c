@@ -16,7 +16,7 @@ int main(void)
 		putchar('0' + b);
 		if (b == 9)
 			continue;
-		putchar(','+' ');
+		putchar(',' + ' ');
 	}
 
 	putchar('\n');
