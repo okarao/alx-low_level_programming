@@ -9,15 +9,15 @@
  */
 int main(void)
 {
-	int c,b;
+	int c, b;
 
 	for (b = 0; b <= 9; b++)
 	{
-		for (c = b+1; c <= 9; c++)
+		for (c = b + 1; c <= 9; c++)
 		{
-			putchar('0'+b);
-			putchar('0'+c);
-			if(b == 8 && c ==9)
+			putchar('0' + b);
+			putchar('0' + c);
+			if (b == 8 && c == 9)
 				continue;
 			putchar(',');
 			putchar(' ');
