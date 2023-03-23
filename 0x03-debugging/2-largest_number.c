@@ -24,7 +24,7 @@ int largest_number(int a, int b, int c)
 		}
 		else
 		{
-			largets = a;
+			largest = a;
 		}
 	}
 	else
