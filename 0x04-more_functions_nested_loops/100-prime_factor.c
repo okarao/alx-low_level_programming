@@ -7,8 +7,8 @@
 
 int main(void)
 {
-	int primeFactor, a, b;
-	long num;
+	int primeFactor;
+	long num, a, b;
 
 	num = 612852475143;
 
@@ -27,7 +27,7 @@ int main(void)
 			}
 			if (primeFactor == 1)
 			{
-				printf("%d, ", a);
+				printf("%ld, ", a);
 			}
 		}
 	}
