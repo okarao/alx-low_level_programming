@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_line - prints a straight line
+ * print_diagonal - prints diagonal
  * @n: number of times the character should be printed
- * Return: A line or enf of line
+ * Return: A diagonal or end of line
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int i;
 
@@ -18,7 +18,7 @@ void print_line(int n)
 	{
 		for (i = 1; i <= n; i++)
 		{
-			_putchar('_');
+			_putchar('\\');
 		}
 		_putchar('\n');
 	}
