@@ -6,10 +6,7 @@
  * Return: update the value pointed to 98
  */
 
-void reset_to_98(int n)
+void reset_to_98(int *n)
 {
-	int *p;
-
-	p = &n;
-	*p = 98;
+	*n = 98;
 }
