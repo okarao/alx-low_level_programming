@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strncat - join two strings and return the joined string
@@ -19,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	if (len >= n)
 	{
-		while (src[j] <= n)
+		while (j < n)
 		{
 			dest[i] = src[j];
 			i++;
