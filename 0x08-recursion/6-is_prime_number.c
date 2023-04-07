@@ -17,7 +17,7 @@ int isPrime(int n, int b)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (isPrime(n, b + 1));
 	}
