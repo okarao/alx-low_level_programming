@@ -14,7 +14,10 @@ char *_strdup(char *str)
 
 	len = strlen(str) + 1;
 	cpstr = malloc(len * sizeof(char));
-
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	if (cpstr != NULL)
 	{
 		for (i = 0; i < len; i++)
