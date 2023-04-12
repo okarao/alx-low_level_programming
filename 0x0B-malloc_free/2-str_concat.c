@@ -18,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		concatstr = s2;
 	}
-	else if (s2 = NULL)
+	else if (s2 == NULL)
 	{
 		concatstr = s1;
 	}
