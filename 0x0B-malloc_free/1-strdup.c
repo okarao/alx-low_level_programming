@@ -25,9 +25,5 @@ char *_strdup(char *str)
 			cpstr[i] = str[i];
 		}
 	}
-	else
-	{
-		return (NULL);
-	}
 	return (cpstr);
 }
