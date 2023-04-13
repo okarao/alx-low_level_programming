@@ -14,16 +14,16 @@ char *_strdup(char *str)
 
 	len = strlen(str) + 1;
 	cpstr = malloc(len * sizeof(char));
-	if (cpstr != NULL)
+	if (!(cpstr))
+	{
+		return (NULL);
+	}
+	else
 	{
 		for (i = 0; i < len; i++)
 		{
 			cpstr[i] = str[i];
 		}
-	}
-	else
-	{
-		return (NULL);
 	}
 	return (cpstr);
 }
