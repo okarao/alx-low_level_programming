@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_ncocat - concat string s1 and first n characters of s2
+ * string_nconcat - concat string s1 and first n characters of s2
  * @s1: first input string
  * @s2: second input string
  * @n: number of characters to extract from s2
