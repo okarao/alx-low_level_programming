@@ -1,7 +1,5 @@
 #ifndef DOG_H
 #define DOG_H
-#include "main.h"
-
 /**
  * struct dog - a structure t
  * @name: an array of characters to hold the name of a dog
