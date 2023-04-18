@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * dog - a structure t
+ * struct dog - a structure t
  * @name: an array of characters to hold the name of a dog
  * @age: an integer variable to hold age
  * @owner: an array of characters
