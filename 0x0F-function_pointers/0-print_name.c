@@ -1,5 +1,6 @@
 #include <stdlib.h>
-#include "function_pointer.h"
+#include <stdio.h>
+#include "function_pointers.h"
 /**
  * print_name - this function prints the name 
  * @name: array of character for name
@@ -9,6 +10,7 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	f = print_name;
-	printf("%s\n", f(name));
+	if (name == NULL || f == NULL)
+		return;
+	f(name);
 }
