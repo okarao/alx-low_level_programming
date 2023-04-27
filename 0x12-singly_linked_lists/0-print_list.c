@@ -9,8 +9,9 @@
 size_t print_list(const list_t *h)
 {
 	size_t count;
-	
+
 	list_t current = h;
+
 	if (current == NULL)
 	{
 		printf("[0] (nill)\n");
