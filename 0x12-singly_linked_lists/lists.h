@@ -5,16 +5,20 @@
 int _putchar(char c);
 
 /**
- * struct list_s - structure for linked list
- * @str: string data member of the struct
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
  * @len: length of the string
- * @next: a pointer to the next node
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
  */
-typedef struct linked_list
+typedef struct list_s
 {
 	char *str;
-	int len;
-	struct linked_list *next;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
+
 size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
 #endif /*LISTS_H*/
