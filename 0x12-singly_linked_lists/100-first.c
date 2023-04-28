@@ -10,6 +10,6 @@ void meFirst(void) __attribute__ ((constructor));
 
 void meFirst(void)
 {
-	 printf("You're beat! and yet, you must allow,\n
-			 I bore my house upon my back!\n");
+	 printf("You're beat! and yet, you must allow,\n");
+	 printf("I bore my house upon my back!\n");
 }
