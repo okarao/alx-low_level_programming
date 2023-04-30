@@ -2,8 +2,8 @@
 
 /**
  * add_nodeint -  add a node at the begining of the list
- * @h: pointer to the list
- * @n: input 
+ * @head: pointer to the list
+ * @n: input
  *
  * Return: address to the new node
  */
