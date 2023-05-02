@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_nodeint - get a node at an index
+ * get_nodeint_at_index - get a node at an index
  * @head: list pointer
  * @index: the index of the node
  *
@@ -10,7 +10,7 @@
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *temp;
+	listint_t *temp, *node = *head;
 	unsigned int i;
 
 	if (head == NULL)
@@ -19,11 +19,11 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	if (index == 0)
 		return (head);
 
-	for (i = 0; i < index-1 && head != NULL; i++)
+	for (i = 0; i < index-1 && node != NULL; i++)
 	{
-		temp = head->next;
+		node = node->next;
 	}
-	temp = head->next;
+	temp = node->next;
 
 	return (temp);
 }
