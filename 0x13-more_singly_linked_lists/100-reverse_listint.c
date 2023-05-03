@@ -6,7 +6,7 @@
  * Return: A pointer to the first node of reversed list
  */
 
-listint_t *reverse_listint(listin_t **head)
+listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *prev = NULL, *curr = NULL, *temp = NULL;
 
