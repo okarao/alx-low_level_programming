@@ -8,11 +8,11 @@
  */
 
 
-ssize_t read_textfile(const char *filename, size_t letters) 
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t count = 0;
 	char letters_read;
-	
+
 	FILE *myFile;
 
 	myFile = fopen(filename, "r");
