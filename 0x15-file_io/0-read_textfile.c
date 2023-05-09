@@ -11,7 +11,7 @@
 ssize_t read_textfile(const char *filename, size_t letters) 
 {
 	ssize_t count = 0;
-	char leters_read;
+	char letters_read;
 	
 	FILE *myFile;
 
@@ -21,10 +21,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	while ( (letter_read = fgetc(myFile)) != EOF)
+	while (letters > 0 && (letters_read = fgetc(myFile)) != EOF)
 	{
-		_putchar(letter_read);
+		_putchar(letters_read);
 		count++;
+		letters--;
 	}
 	fclose(myFile);
 	return (count);
