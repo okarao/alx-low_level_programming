@@ -12,7 +12,7 @@ unsigned int count_set_bits(unsigned long int num)
 	while (num > 0)
 	{
 		count++;
-		n &= (n - 1);
+		num &= (num - 1);
 	}
 	return (count);
 }
