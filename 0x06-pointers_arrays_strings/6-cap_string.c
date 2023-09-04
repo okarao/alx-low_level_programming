@@ -7,28 +7,26 @@
  */
 char *cap_string(char *str)
 {
-	int i;
-	/* 
-	 * char sep[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-	 */
+	int i, count, len, unit;
+	
+	char sep[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
 	i = 0;
+	unit = 32;
+	len = strlen(sep) -1;
 	while (str[i] != '\0')
 	{
-		if (str[i] == 0)
+		if (str[i] <= 'a' && str[i] >= 'z')
 		{
-			if (str[i] >= 'a' && str[i] <= 'z')
-			{
-				str[i] = str[i] - 32;
-			}
-			continue;
+			str[i] = str[i] - unit;
 		}
-		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' || str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
+		unit = 0;
+		for (count = 0; count <= len; count++)
 		{
-			++i;
-			if (str[i] >= 'a' && str[i] <= 'z')
+			if (sep[count] == str[i])
 			{
-				str[i] = str[i] - 32;
+				unit = 32;
+				continue;
 			}
 		}
 		i++;
