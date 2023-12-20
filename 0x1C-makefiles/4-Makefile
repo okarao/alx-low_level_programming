@@ -1,0 +1,25 @@
+# make -f 3-Makefile
+# Variables
+CC=gcc
+SRC=main.c school.c
+OBJ= $(SRC:.c=.o)
+NAME=school
+RM=rm -f
+CFLAGS=-Wall -Werror -Wextra -pedantic
+
+# Rules
+# Builds executable
+all:$(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+
+# Deletes all Emacs and Vim Temporary files along with the executable
+clean:
+	$(RM) *~ $(NAME)
+# Deletes the object files
+oclean:
+	$(RM) $(OBJ)
+# Deletes all Emacs and Vim temporary files, the executable and object
+fclean:
+	$(RM) *~ $(OBJ) $(NAME)
+# Forces recompilation of all source files
+re: oclean all
