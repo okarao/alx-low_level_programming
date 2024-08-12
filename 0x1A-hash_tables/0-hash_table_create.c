@@ -4,19 +4,19 @@
 /**
  * hash_table_create - create a hash table
  *
- * @size - long int for size of table
+ * @size: long int for size of table
  *
  * Return: pointer to new table or null
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	/* 
+	/*
 	 * Creates a new Hash table
 	 */
 	unsigned long int i = 0;
 	hash_table_t *table = malloc(sizeof(hash_table_t));
 	if (table == NULL)
-		return NULL;
+		return (NULL);
 
 	table->size = size;
 
@@ -24,12 +24,12 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (table->array == NULL)
 	{
 		free(table);
-		
-		return NULL;
+
+		return (NULL);
 	}
 
 	for (i = 0; i < table->size; i++)
 		table->array[i] = NULL;
 
-	return table;
+	return (table);
 }
