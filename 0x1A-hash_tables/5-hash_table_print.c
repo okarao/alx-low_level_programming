@@ -9,12 +9,13 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	if (ht == NULL)
-		return;
 
 	unsigned long int i;
 	hash_node_t *current_node;
 	int Key_Value = 1;
+
+	if (ht == NULL)
+		return;
 
 	printf("{");
 
